@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhrasalVerbsAR</string>
+    <string name="ar">AR</string>
+    <string name="download">Download</string>
+    <string name="anim">anim</string>
+    <string name="delete" />
+    <string name="del">del</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo2">TODO</string>
+</resources>
