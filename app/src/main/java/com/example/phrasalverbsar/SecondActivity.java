@@ -16,6 +16,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+// Активити со списком глаголов
+
 public class SecondActivity extends AppCompatActivity {
 
     // переменные, которые будут содержать данные о выбранном глаголе для построения модели
@@ -40,12 +42,10 @@ public class SecondActivity extends AppCompatActivity {
         VerbsList.setAdapter(adapter);
 
         // Получение данных для списка глаголов из базы данных
+        // Добавление полученных элементов в список
 
         DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("Verbs");
         ref.addValueEventListener(new ValueEventListener() {
-
-        // Добавление полученных элементов в список
-
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()){

@@ -24,6 +24,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
+// Активити с отображением AR фрагмента
+
 public class MainActivity extends AppCompatActivity {
 
     public static AnchorNode anchorNode;
@@ -106,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    // Переменная где будет хранится модель после рендеринга
     private ModelRenderable renderable;
 
     // Построение, рендеринг полученной модели с облака
